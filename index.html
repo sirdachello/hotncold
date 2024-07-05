@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Guess a number!</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="header-title">Hot'n'Cold</h1>
+        <p class="header-description">
+          Hey there, the rules are simple. <br />
+          I will guess a random number and you need to guess it. <br />
+          Don't worry, you'll have multiple tries! :)
+        </p>
+      </header>
+      <main class="main">
+        <div class="main-playground">
+          <div class="main-computer-guess">
+            <div class="computer-guess-content">
+              <p class="computer-guess-text">Start!</p>
+            </div>
+          </div>
+          <div class="main-player-guess">
+            <div class="main-player-guess-wrapper">
+              <label for="main-player-guess">Your guess:</label>
+              <input type="number" id="main-player-guess" />
+            </div>
+          </div>
+          <div class="button-wrapper">
+          <button type="button" class="main-playground-button-start button" id="main-playground-button-start">Commit your guess!</button>
+          <button type="button" class="cheat-button button" id="cheat-button">Cheat</button>
+        </div>
+        </div>
+        <div class="game-result"></div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+:root {
+    --bgColor: linear-gradient(linear, left top, left bottom, rgb(90, 2, 150), red);
+    --border-radius: 15px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(45deg,  rgb(90, 0, 126), rgb(255, 125, 125));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    margin-inline: 30px;
+}
+.header {
+    text-align: center;
+}
+.main-computer-guess {
+    width: 150px;
+    aspect-ratio: 1;
+    background: linear-gradient(45deg, rgb(65, 52, 180), rgb(90, 0, 126));
+    border: 3px, solid black;
+    border-radius: var(--border-radius);
+}
+.main-computer-guess {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.computer-guess-text {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
+.main-player-guess-wrapper {
+    display: flex;
+    justify-content: center;
+}
+#main-player-guess {
+    border-radius: 5px;
+}
+
+
+.game-result {
+    text-align: center;
+    overflow-x: hidden;
+    word-break: break-all;
+}
+
+.button {
+    border-radius: 5px;
+    background: linear-gradient(-45deg, white, gray);
+}
+.cheat-button {
+    opacity: 0.5;
+}
+.button-wrapper {
+    margin-block: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
