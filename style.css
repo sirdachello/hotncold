@@ -4,6 +4,7 @@
 }
 
 body {
+    font-size: 2em;
     height: 100%;
     margin: 0;
     background: linear-gradient(45deg,  rgb(90, 0, 126), rgb(255, 125, 125));
@@ -12,13 +13,13 @@ body {
 }
 
 .wrapper {
-    margin-inline: 30px;
+    margin-inline: 50px;
 }
 .header {
     text-align: center;
 }
 .main-computer-guess {
-    width: 150px;
+    width: 300px;
     aspect-ratio: 1;
     background: linear-gradient(45deg, rgb(65, 52, 180), rgb(90, 0, 126));
     border: 3px, solid black;
@@ -34,7 +35,7 @@ body {
 
 .computer-guess-text {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 3rem;
+    font-size: 6rem;
 }
 .main-player-guess-wrapper {
     display: flex;
@@ -42,6 +43,7 @@ body {
 }
 #main-player-guess {
     border-radius: 5px;
+    
 }
 
 
@@ -63,4 +65,30 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+    .main-computer-guess {
+        width: 300px;
+    }
+}
+@media (max-width: 600px) {
+    html {
+        font-size: 11px;
+    }
+    .main-computer-guess {
+        width: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+    html {
+        font-size: 9px;
+    }
+    .main-computer-guess {
+        width: 200px;
+    }
 }
