@@ -13,14 +13,14 @@ body {
 }
 
 .wrapper {
-    margin-inline: 50px;
+    margin-inline: 25px;
 }
 .header {
     text-align: center;
 }
 .main-computer-guess {
     width: 300px;
-    aspect-ratio: 1;
+    height: 200px;
     background: linear-gradient(45deg, rgb(65, 52, 180), rgb(90, 0, 126));
     border: 3px, solid black;
     border-radius: var(--border-radius);
@@ -69,26 +69,19 @@ body {
 
 @media (max-width: 768px) {
     html {
-        font-size: 13px;
+        font-size: 2vw
     }
     .main-computer-guess {
-        width: 300px;
+        width: 65vw;
+        height: 15vh;
     }
 }
 @media (max-width: 600px) {
-    html {
-        font-size: 11px;
-    }
     .main-computer-guess {
-        width: 300px;
     }
 }
 
 @media (max-width: 425px) {
-    html {
-        font-size: 9px;
-    }
     .main-computer-guess {
-        width: 200px;
     }
 }
