@@ -9,6 +9,7 @@ let cheatButton = document.getElementById(`cheat-button`);
 let isGameOn = false;
 let tries = 0;
 let goalNumber;
+
 startGame.addEventListener(`click`, gameOn);
 
 function gameOn() {
@@ -38,11 +39,13 @@ button.addEventListener(`click`, () => {
       textOutput.innerHTML = `You won! <br> The number was ${goalNumber}! <br> It was your ${tries} try! <br> You tried: ${guesses}`;
       isGameOn = false;
       startGame.addEventListener(`click`, gameOn);
-      tries === 0;
-      guesses = []
+      tries = 0;
+      guesses = [];
     }
   }
 });
+
+
 
 cheatButton.addEventListener(`click`, getGoalNumber);
 
